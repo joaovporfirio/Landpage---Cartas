@@ -1,0 +1,445 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #e0e0e0;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Efeito de textura no fundo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(120, 80, 150, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(80, 120, 150, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 20px rgba(139, 92, 246, 0.5);
+    letter-spacing: 2px;
+    color: #d4b5ff;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    font-style: italic;
+    color: #b8a8d4;
+}
+
+/* Main container */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Grid de cartas */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2.5rem;
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Wrapper da carta + botão */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: slideIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px) rotateX(10deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+/* Carta individual */
+.card {
+    background: linear-gradient(145deg, #1e1e2f 0%, #2a2a3e 100%);
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 24px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(139, 92, 246, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 16px 48px rgba(0, 0, 0, 0.8),
+        0 0 0 2px rgba(139, 92, 246, 0.4),
+        0 0 40px rgba(139, 92, 246, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Imagem da carta */
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #4a3f6f 0%, #5d4e7a 50%, #3d3456 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(0, 0, 0, 0.05) 10px,
+            rgba(0, 0, 0, 0.05) 20px
+        );
+    pointer-events: none;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+/* Conteúdo da carta */
+.card-content {
+    padding: 1.75rem;
+    background: linear-gradient(180deg, rgba(30, 30, 47, 0.9) 0%, rgba(26, 26, 38, 0.95) 100%);
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #e8d5ff;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: #b8a8d4;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Botão de áudio - agora fora do card */
+.audio-button {
+    background: linear-gradient(135deg, #6b4fa3 0%, #8b5cf6 50%, #7c3aed 100%);
+    color: white;
+    border: none;
+    padding: 0.85rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 
+        0 4px 12px rgba(139, 92, 246, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.audio-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.audio-button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.audio-button:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 6px 20px rgba(139, 92, 246, 0.6),
+        0 0 30px rgba(139, 92, 246, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.audio-button:active {
+    transform: scale(0.98);
+}
+
+.audio-button.playing {
+    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #047857 100%);
+    animation: pulse 1.5s infinite;
+    box-shadow: 
+        0 4px 12px rgba(16, 185, 129, 0.5),
+        0 0 30px rgba(16, 185, 129, 0.3);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 
+            0 4px 12px rgba(16, 185, 129, 0.5),
+            0 0 30px rgba(16, 185, 129, 0.3);
+    }
+    50% {
+        opacity: 0.85;
+        box-shadow: 
+            0 4px 12px rgba(16, 185, 129, 0.7),
+            0 0 40px rgba(16, 185, 129, 0.5);
+    }
+}
+
+/* Ícone de áudio */
+.audio-icon {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
+    color: #b8a8d4;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(139, 92, 246, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.25rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    
+    main {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header h1 {
+        font-size: 1.85rem;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Placeholder para imagens */
+.card-image-placeholder {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, #4a3f6f 0%, #5d4e7a 50%, #3d3456 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-placeholder::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(0, 0, 0, 0.05) 10px,
+            rgba(0, 0, 0, 0.05) 20px
+        );
+    pointer-events: none;
+}
+
+/* Loading state */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #b8a8d4;
+}
+
+/* Delay progressivo para cada carta */
+.card-wrapper:nth-child(1) { animation-delay: 0.05s; }
+.card-wrapper:nth-child(2) { animation-delay: 0.1s; }
+.card-wrapper:nth-child(3) { animation-delay: 0.15s; }
+.card-wrapper:nth-child(4) { animation-delay: 0.2s; }
+.card-wrapper:nth-child(5) { animation-delay: 0.25s; }
+.card-wrapper:nth-child(6) { animation-delay: 0.3s; }
+.card-wrapper:nth-child(7) { animation-delay: 0.35s; }
+.card-wrapper:nth-child(8) { animation-delay: 0.4s; }
+.card-wrapper:nth-child(9) { animation-delay: 0.45s; }
+.card-wrapper:nth-child(10) { animation-delay: 0.5s; }
+.card-wrapper:nth-child(11) { animation-delay: 0.55s; }
+.card-wrapper:nth-child(12) { animation-delay: 0.6s; }
+
+/* Efeito de brilho nas cartas */
+.card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.03) 50%,
+        transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    pointer-events: none;
+}
+
+.card:hover::after {
+    left: 100%;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6b4fa3 0%, #8b5cf6 100%);
+    border-radius: 6px;
+    border: 2px solid #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #8b5cf6 0%, #a78bfa 100%);
+}
+
