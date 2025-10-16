@@ -343,7 +343,7 @@ function playAudio(button) {
         button.classList.remove('playing');
         button.querySelector('span').textContent = 'Ouvir pronúncia';
         // Fallback: usar Web Speech API
-        speakText(title);
+        //speakText(title);
     });
 }
 
@@ -352,7 +352,7 @@ function speakText(text) {
     if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'en-US'; // Idioma inglês
-        utterance.rate = 0.8; // Velocidade um pouco mais lenta
+        utterance.rate = 1; // Velocidade um pouco mais lenta
         utterance.pitch = 1;
         
         window.speechSynthesis.speak(utterance);

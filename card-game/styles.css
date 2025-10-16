@@ -337,8 +337,8 @@ main {
     background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #ffd700 100%);
     animation: pulse 1.5s infinite;
     box-shadow: 
-        0 4px 12px rgba(16, 185, 129, 0.5),
-        0 0 30px rgba(16, 185, 129, 0.3);
+        0 4px 12px #b8860b,
+        0 0 30px #b8860b;
 }
 
 
