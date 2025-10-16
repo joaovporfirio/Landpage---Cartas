@@ -2,7 +2,7 @@
 const cardsData = [
     {
         id: 1,
-        title: "ADINKRAHENE",
+        title: "1 - ADINKRAHENE",
         description: "The meaning and philosophical significance of Adinkrahene " +
                     "Adinkrahene means “King of the Adinkra symbols.” It is a symbol for authority, " +
                     "leadership, and charisma. Means “highest, best, or king,” and is a symbol of " +
@@ -12,7 +12,7 @@ const cardsData = [
     },
     {
         id: 2,
-        title: "AKOMA NTOASO",
+        title: "2 - AKOMA NTOASO",
         description: "Os  corações ligados ou unidos. Símbolo da "+
                     "comunhão e unidade no pensamento e na "+
                     "ação ",
@@ -21,7 +21,7 @@ const cardsData = [
     },
     {
         id: 3,
-        title: "ANANSE NTONTAN",
+        title: "3 - ANANSE NTONTAN",
         description: "Símbolo da sabedoria, esperteza, "+
                      "criatividade e da complexidade da vida ",
         image: "images/cat.jpg",
@@ -29,7 +29,7 @@ const cardsData = [
     },
     {
         id: 4,
-        title: "AYA",
+        title: "4 - AYA",
         description: "Símbolo de resistência, desafio às "+
                      " dificuldades, força física, perseverança,"+ 
                      " independência e competência ",
@@ -38,7 +38,7 @@ const cardsData = [
     },
     {
         id: 5,
-        title: "BI NKA BI",
+        title: "5 - BI NKA BI",
         description: "Basicamente, esse Adinkra significa que "+
                     "não devemos ofender uns aos outros e que "+
                     "cada um deve ter a liberdade ao "+
@@ -53,7 +53,7 @@ const cardsData = [
     },
     {
         id: 6,
-        title: "DONO",
+        title: "6 - DONO",
         description: "O tambor falante da axila. Símbolo da "+
                     "invocaçã, do elogio da boa vontade e do "+
                     "ritmo",
@@ -62,7 +62,7 @@ const cardsData = [
     },
     {
         id: 7,
-        title: "DUAFE",
+        title: "7 - DUAFE",
         description: "Duafe é um símbolo ancestral africano que "+
                     "representa o pente de madeira, e é associado "+
                     "a características femininas como beleza "+
@@ -72,7 +72,7 @@ const cardsData = [
     },
     {
         id: 8,
-        title: "FAFANTO",
+        title: "8 - FAFANTO",
         description: "A borboleta. Símbolo da ternura, "+
                     "delicadeza, honestidade e fragilidade",
         image: "images/elephant.jpg",
@@ -80,7 +80,7 @@ const cardsData = [
     },
     {
         id: 9,
-        title: "HWEMUDUA",
+        title: "9 - HWEMUDUA",
         description: "Basicamente, o significado desse Adinkra é "+
                     "que quando algo é bem examinado, seu "+
                     "conteúdo é bem conhecido. Ou seja, é "+
@@ -92,7 +92,7 @@ const cardsData = [
     },
     {
         id: 10,
-        title: "KOJO BAIDEN",
+        title: "10 - KOJO BAIDEN",
         description: "Kojo Baiden se traduz como 'raios'. Seus "+
                     "raios representando o sol e as estrelas são "+
                     "representados como os cílios inferiores dos "+
@@ -105,7 +105,7 @@ const cardsData = [
     },
     {
         id: 11,
-        title: "KURONTI NE AKWAMU ou KONTIRE NE AKWAM ",
+        title: "11 - KURONTI NE AKWAMU ou KONTIRE NE AKWAM ",
         description: "Símbolo da democracia, da dualidade da "+
                     "essência da vida interdependência e da "+
                     "complementariedade",
@@ -114,7 +114,7 @@ const cardsData = [
     },
     {
         id: 12,
-        title: "MATE MASIE",
+        title: "12 - MATE MASIE",
         description: "Em suma, esse Adinkra simboliza a "+
                     "sabedoria e o conhecimento, mas o uso do "+
                     "conhecimento com prudência. De acordo "+
@@ -126,7 +126,7 @@ const cardsData = [
     },
     {
         id: 13,
-        title: "MPUANNUM",
+        title: "13 - MPUANNUM",
         description: "Símbolo do ofício espiritual, da lealdade e "+
                     "da habilidade",
         image: "images/elephant.jpg",
@@ -134,7 +134,7 @@ const cardsData = [
     },
     {
         id: 14,
-        title: "NKONSONKONSON",
+        title: "14 - NKONSONKONSON",
         description: "Símbolo das relações humanas. Símbolo da "+
                     "unidade, interdependência, fraternidade e "+
                     "cooperação ",
@@ -143,7 +143,7 @@ const cardsData = [
     },
     {
         id: 15,
-        title: "NKYIMKYIM",
+        title: "15 - NKYIMKYIM",
         description: "Basicamente, esse símbolo do Adinkra "+
                     "significa voltas e reviravoltas. Ou seja, a "+
                     "vida não é uma linha reta, portanto, para "+
@@ -154,7 +154,7 @@ const cardsData = [
     },
     {
         id: 16,
-        title: "NSAA",
+        title: "16 - NSAA",
         description: "Um cobertor tecido a mão. Símbolo de "+
                     "excelência, originalidade e autenticidade",
         image: "images/elephant.jpg",
@@ -162,14 +162,14 @@ const cardsData = [
     },
     {
         id: 17,
-        title: "NYAME BIRBI WO SORO",
+        title: "17 - NYAME BIRBI WO SORO",
         description: "Símbolo da esperança e da aspiração",
         image: "images/elephant.jpg",
         audio: "audio/elephant.mp3"
     },
     {
         id: 18,
-        title: "NYAME DUA",
+        title: "18 - NYAME DUA",
         description: "A árvore ou o altar de Deus. Simbolo da "+
                     "presença de Deus e de sua proteção.",
         image: "images/elephant.jpg",
@@ -177,7 +177,7 @@ const cardsData = [
     },
     {
         id: 19,
-        title: "NYANSAPOW",
+        title: "19 - NYANSAPOW",
         description: "É um símbolo Adinkra que significa "+
         "\"É o Sábio quem desata o nó da sabedoria\"",
         image: "images/elephant.jpg",
@@ -185,14 +185,14 @@ const cardsData = [
     },
     {
         id: 20,
-        title: "ODO NYERA FIE KWAN ",
+        title: "20 - ODO NYERA FIE KWAN ",
         description: "Símbolo do amor, da devoção e da fidelidade ",
         image: "images/elephant.jpg",
         audio: "audio/elephant.mp3"
     },
     {
         id: 21,
-        title: "OKODEE MMOWERE",
+        title: "21 - OKODEE MMOWERE",
         description: "Símboloda força, da coragem e do poder, "+
                     "baseado na naturesa e no comportamento ",
         image: "images/elephant.jpg",
@@ -200,7 +200,7 @@ const cardsData = [
     },
     {
         id: 22,
-        title: "PEMPAMSIE",
+        title: "22 - PEMPAMSIE",
         description: "Símbolo de prontidão, persistência, "+
                     "resistência, bravura e coragem ",
         image: "images/elephant.jpg",
@@ -208,14 +208,14 @@ const cardsData = [
     },
     {
         id: 23,
-        title: "SANKOFA",
+        title: "23 - SANKOFA",
         description: "Símbolo da Sabedoria de aprender com o "+
                     "passado para construir o futuro ",
         image: "images/elephant.jpg",
         audio: "audio/elephant.mp3"
     },{
         id: 24,
-        title: "SUNSUM",
+        title: "24 - SUNSUM",
         description: "A alma. Símbolo da pureza espiritual e da "+
                         "santidade",
         image: "images/elephant.jpg",
