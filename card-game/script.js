@@ -2,211 +2,224 @@
 const cardsData = [
     {
         id: 1,
-        title: "Apple",
-        titlePT: "Maçã",
-        description: "Uma fruta vermelha ou verde, doce e crocante",
-        image: "images/apple.jpg",
+        title: "ADINKRAHENE",
+        description: "The meaning and philosophical significance of Adinkrahene " +
+                    "Adinkrahene means “King of the Adinkra symbols.” It is a symbol for authority, " +
+                    "leadership, and charisma. Means “highest, best, or king,” and is a symbol of " +
+                    "excellence.",
+        image: "images/card01.jpeg",
         audio: "audio/apple.mp3"
     },
     {
         id: 2,
-        title: "Book",
-        titlePT: "Livro",
-        description: "Um conjunto de páginas com histórias ou informações",
+        title: "AKOMA NTOASO",
+        description: "Os  corações ligados ou unidos. Símbolo da "+
+                    "comunhão e unidade no pensamento e na "+
+                    "ação ",
         image: "images/book.jpg",
         audio: "audio/book.mp3"
     },
     {
         id: 3,
-        title: "Cat",
-        titlePT: "Gato",
-        description: "Um animal de estimação peludo e independente",
+        title: "ANANSE NTONTAN",
+        description: "Símbolo da sabedoria, esperteza, "+
+                     "criatividade e da complexidade da vida ",
         image: "images/cat.jpg",
         audio: "audio/cat.mp3"
     },
     {
         id: 4,
-        title: "Dog",
-        titlePT: "Cachorro",
-        description: "O melhor amigo do homem, leal e brincalhão",
+        title: "AYA",
+        description: "Símbolo de resistência, desafio às "+
+                     " dificuldades, força física, perseverança,"+ 
+                     " independência e competência ",
         image: "images/dog.jpg",
         audio: "audio/dog.mp3"
     },
     {
         id: 5,
-        title: "Elephant",
-        titlePT: "Elefante",
-        description: "O maior animal terrestre com uma tromba longa",
+        title: "BI NKA BI",
+        description: "Basicamente, esse Adinkra significa que "+
+                    "não devemos ofender uns aos outros e que "+
+                    "cada um deve ter a liberdade ao "+
+                    "desempenhar seus deveres. Dessa forma, o "+
+                    "ideograma vai contra a fofoca, chantagem, "+
+                    "calúnia, provocação, trapaça, suborno e "+
+                    "corrupção, além de outros vícios sociais que "+
+                    "podem gerar conflitos. E assim, retardar o "+
+                    "crescimento da sociedade. ",
         image: "images/elephant.jpg",
         audio: "audio/elephant.mp3"
     },
     {
         id: 6,
-        title: "Fish",
-        titlePT: "Peixe",
-        description: "Um animal aquático que respira através de guelras",
-        image: "images/fish.jpg",
-        audio: "audio/fish.mp3"
+        title: "DONO",
+        description: "O tambor falante da axila. Símbolo da "+
+                    "invocaçã, do elogio da boa vontade e do "+
+                    "ritmo",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 7,
-        title: "Guitar",
-        titlePT: "Violão",
-        description: "Um instrumento musical de cordas",
-        image: "images/guitar.jpg",
-        audio: "audio/guitar.mp3"
+        title: "DUAFE",
+        description: "Duafe é um símbolo ancestral africano que "+
+                    "representa o pente de madeira, e é associado "+
+                    "a características femininas como beleza "+
+                    "natural, limpeza, amor e cuidado:",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 8,
-        title: "House",
-        titlePT: "Casa",
-        description: "Um lugar onde as pessoas vivem e se sentem seguras",
-        image: "images/house.jpg",
-        audio: "audio/house.mp3"
+        title: "FAFANTO",
+        description: "A borboleta. Símbolo da ternura, "+
+                    "delicadeza, honestidade e fragilidade",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 9,
-        title: "Ice Cream",
-        titlePT: "Sorvete",
-        description: "Uma sobremesa gelada e doce em vários sabores",
-        image: "images/icecream.jpg",
-        audio: "audio/icecream.mp3"
+        title: "HWEMUDUA",
+        description: "Basicamente, o significado desse Adinkra é "+
+                    "que quando algo é bem examinado, seu "+
+                    "conteúdo é bem conhecido. Ou seja, é "+
+                    "necessário fazer um exame mais detalhado "+
+                    "e crítico em todos os aspectos da vida, para "+
+                    "ter o verdadeiro conhecimento. ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 10,
-        title: "Jacket",
-        titlePT: "Jaqueta",
-        description: "Uma peça de roupa usada para se aquecer",
-        image: "images/jacket.jpg",
-        audio: "audio/jacket.mp3"
+        title: "KOJO BAIDEN",
+        description: "Kojo Baiden se traduz como 'raios'. Seus "+
+                    "raios representando o sol e as estrelas são "+
+                    "representados como os cílios inferiores dos "+
+                    "olhos ou raios de luz. Este símbolo protetor"+ 
+                    "incorpora a ideia de que somos todos um "+
+                    "com o universo, tudo está conectado e Deus "+
+                    "vê e conhece todas as coisas.",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 11,
-        title: "Kite",
-        titlePT: "Pipa",
-        description: "Um brinquedo que voa no céu com o vento",
-        image: "images/kite.jpg",
-        audio: "audio/kite.mp3"
+        title: "KURONTI NE AKWAMU ou KONTIRE NE AKWAM ",
+        description: "Símbolo da democracia, da dualidade da "+
+                    "essência da vida interdependência e da "+
+                    "complementariedade",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 12,
-        title: "Lion",
-        titlePT: "Leão",
-        description: "O rei da selva, um grande felino majestoso",
-        image: "images/lion.jpg",
-        audio: "audio/lion.mp3"
+        title: "MATE MASIE",
+        description: "Em suma, esse Adinkra simboliza a "+
+                    "sabedoria e o conhecimento, mas o uso do "+
+                    "conhecimento com prudência. De acordo "+
+                    "com o povo Akan, pessoas inteligentes e "+
+                    "sábias são aquelas que ouvem algo e o "+
+                    "guarda para lembrar no futuro. ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 13,
-        title: "Moon",
-        titlePT: "Lua",
-        description: "O satélite natural da Terra que brilha à noite",
-        image: "images/moon.jpg",
-        audio: "audio/moon.mp3"
+        title: "MPUANNUM",
+        description: "Símbolo do ofício espiritual, da lealdade e "+
+                    "da habilidade",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 14,
-        title: "Notebook",
-        titlePT: "Caderno",
-        description: "Um conjunto de folhas para escrever e desenhar",
-        image: "images/notebook.jpg",
-        audio: "audio/notebook.mp3"
+        title: "NKONSONKONSON",
+        description: "Símbolo das relações humanas. Símbolo da "+
+                    "unidade, interdependência, fraternidade e "+
+                    "cooperação ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 15,
-        title: "Orange",
-        titlePT: "Laranja",
-        description: "Uma fruta cítrica redonda e suculenta",
-        image: "images/orange.jpg",
-        audio: "audio/orange.mp3"
+        title: "NKYIMKYIM",
+        description: "Basicamente, esse símbolo do Adinkra "+
+                    "significa voltas e reviravoltas. Ou seja, a "+
+                    "vida não é uma linha reta, portanto, para "+
+                    "haver uma vida prudente é necessário um "+
+                    "equilíbrio entre um zig e um zag. ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 16,
-        title: "Piano",
-        titlePT: "Piano",
-        description: "Um grande instrumento musical de teclas",
-        image: "images/piano.jpg",
-        audio: "audio/piano.mp3"
+        title: "NSAA",
+        description: "Um cobertor tecido a mão. Símbolo de "+
+                    "excelência, originalidade e autenticidade",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 17,
-        title: "Queen",
-        titlePT: "Rainha",
-        description: "A governante feminina de um reino",
-        image: "images/queen.jpg",
-        audio: "audio/queen.mp3"
+        title: "NYAME BIRBI WO SORO",
+        description: "Símbolo da esperança e da aspiração",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 18,
-        title: "Rainbow",
-        titlePT: "Arco-íris",
-        description: "Um arco colorido que aparece no céu após a chuva",
-        image: "images/rainbow.jpg",
-        audio: "audio/rainbow.mp3"
+        title: "NYAME DUA",
+        description: "A árvore ou o altar de Deus. Simbolo da "+
+                    "presença de Deus e de sua proteção.",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 19,
-        title: "Sun",
-        titlePT: "Sol",
-        description: "A estrela que ilumina e aquece nosso planeta",
-        image: "images/sun.jpg",
-        audio: "audio/sun.mp3"
+        title: "NYANSAPOW",
+        description: "É um símbolo Adinkra que significa "+
+        "\"É o Sábio quem desata o nó da sabedoria\"",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 20,
-        title: "Tree",
-        titlePT: "Árvore",
-        description: "Uma planta grande com tronco, galhos e folhas",
-        image: "images/tree.jpg",
-        audio: "audio/tree.mp3"
+        title: "ODO NYERA FIE KWAN ",
+        description: "Símbolo do amor, da devoção e da fidelidade ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 21,
-        title: "Umbrella",
-        titlePT: "Guarda-chuva",
-        description: "Um objeto usado para se proteger da chuva",
-        image: "images/umbrella.jpg",
-        audio: "audio/umbrella.mp3"
+        title: "OKODEE MMOWERE",
+        description: "Símboloda força, da coragem e do poder, "+
+                    "baseado na naturesa e no comportamento ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 22,
-        title: "Violin",
-        titlePT: "Violino",
-        description: "Um instrumento musical de cordas tocado com arco",
-        image: "images/violin.jpg",
-        audio: "audio/violin.mp3"
+        title: "PEMPAMSIE",
+        description: "Símbolo de prontidão, persistência, "+
+                    "resistência, bravura e coragem ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     },
     {
         id: 23,
-        title: "Watch",
-        titlePT: "Relógio",
-        description: "Um dispositivo usado para ver as horas",
-        image: "images/watch.jpg",
-        audio: "audio/watch.mp3"
-    },
-    {
+        title: "SANKOFA",
+        description: "Símbolo da Sabedoria de aprender com o "+
+                    "passado para construir o futuro ",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
+    },{
         id: 24,
-        title: "Xylophone",
-        titlePT: "Xilofone",
-        description: "Um instrumento musical com barras coloridas",
-        image: "images/xylophone.jpg",
-        audio: "audio/xylophone.mp3"
-    },
-    {
-        id: 25,
-        title: "Yacht",
-        titlePT: "Iate",
-        description: "Um barco grande e luxuoso para passeios",
-        image: "images/yacht.jpg",
-        audio: "audio/yacht.mp3"
-    },
-    {
-        id: 26,
-        title: "Zebra",
-        titlePT: "Zebra",
-        description: "Um animal africano com listras pretas e brancas",
-        image: "images/zebra.jpg",
-        audio: "audio/zebra.mp3"
+        title: "SUNSUM",
+        description: "A alma. Símbolo da pureza espiritual e da "+
+                        "santidade",
+        image: "images/elephant.jpg",
+        audio: "audio/elephant.mp3"
     }
 ];
 
@@ -232,10 +245,8 @@ function createCard(card) {
     cardWrapper.dataset.cardId = card.id;
     
     cardWrapper.innerHTML = `
-        <div class="card">
-            <div class="card-image-placeholder">
-                ${card.titlePT[0]}
-            </div>
+        <div class="card" style="background-image: url('${card.image}');">
+            <div class="overlay"></div>
             <div class="card-content">
                 <h2 class="card-title">${card.title}</h2>
                 <p class="card-description">${card.description}</p>
@@ -246,7 +257,6 @@ function createCard(card) {
             <span>Ouvir pronúncia</span>
         </button>
     `;
-    
     return cardWrapper;
 }
 
@@ -393,3 +403,13 @@ window.cardGame = {
     cardsData
 };
 
+datefooter = function() {
+    const yearElement = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    if (yearElement) {
+        yearElement.textContent = currentYear + " - Todos os direitos reservados.";
+        yearElement.setAttribute('datetime', currentYear);
+    }
+};
+
+document.addEventListener('DOMContentLoaded', datefooter);

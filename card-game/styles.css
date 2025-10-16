@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Georgia', 'Times New Roman', serif;
-    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    background: linear-gradient(135deg, #f5f1e8 0%, #ebe4d1 50%, #f8f5ed 100%);
     background-attachment: fixed;
     min-height: 100vh;
     color: #e0e0e0;
@@ -32,30 +32,87 @@ body::before {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: #f0f0f0;
+    background: linear-gradient(135deg, #ffffff 0%, #fefdfb 100%);
+    color: #2c2c2c;
     text-align: center;
-    padding: 3rem 1rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    padding: 3.5rem 2rem 3.5rem;
+    box-shadow: 0 8px 32px rgba(218, 165, 32, 0.12);
+    border-bottom: none;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+
+/* Efeito decorativo no header */
+header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 40%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    right: -10%;
+    width: 40%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(221, 221, 221, 0.08) 0%, transparent 10%);
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+/* Linha decorativa dourada */
+header .header-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent 0%, #daa520 20%, #ffd700 50%, #daa520 80%, transparent 100%);
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 20px rgba(139, 92, 246, 0.5);
-    letter-spacing: 2px;
-    color: #d4b5ff;
+    font-size: 3.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: #b8860b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #daa520 50%, transparent 100%);
 }
 
 header p {
-    font-size: 1.1rem;
-    opacity: 0.85;
+    font-size: 1.15rem;
+    opacity: 0.7;
     font-style: italic;
-    color: #b8a8d4;
+    color: #5d5d5d;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 /* Main container */
@@ -108,17 +165,24 @@ main {
 
 /* Carta individual */
 .card {
-    background: linear-gradient(145deg, #1e1e2f 0%, #2a2a3e 100%);
-    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 2/3;           /* proporção típica de cartas de baralho */
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg, #ffffff 0%, #fefdfb 100%);
+    background-size: cover;
+    border-radius: 12px;
     box-shadow: 
-        0 8px 24px rgba(0, 0, 0, 0.6),
-        0 0 0 1px rgba(139, 92, 246, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        0 8px 24px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(218, 165, 32, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     position: relative;
-    border: 1px solid rgba(139, 92, 246, 0.15);
+    border: 0px solid rgba(218, 165, 32, 0.2);
+    
 }
 
 .card::before {
@@ -137,10 +201,10 @@ main {
 .card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 
-        0 16px 48px rgba(0, 0, 0, 0.8),
-        0 0 0 2px rgba(139, 92, 246, 0.4),
-        0 0 40px rgba(139, 92, 246, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        0 16px 18px rgba(218, 165, 32, 0.25),
+        0 0 0 2px rgba(218, 165, 32, 0.4),
+        0 0 10px rgba(255, 215, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 .card:hover::before {
@@ -152,11 +216,11 @@ main {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    background: linear-gradient(135deg, #4a3f6f 0%, #5d4e7a 50%, #3d3456 100%);
+    background: linear-gradient(135deg, #e8dcc4 0%, #d4c5a9 50%, #f0e6d2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #8b7355;
     font-size: 4rem;
     font-weight: bold;
     position: relative;
@@ -191,32 +255,31 @@ main {
 /* Conteúdo da carta */
 .card-content {
     padding: 1.75rem;
-    background: linear-gradient(180deg, rgba(30, 30, 47, 0.9) 0%, rgba(26, 26, 38, 0.95) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(254, 253, 251, 0.9) 100%);
 }
 
 .card-title {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #e8d5ff;
+    color: #555555;
     margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(218, 165, 32, 0.1);
     letter-spacing: 1px;
 }
 
 .card-description {
-    font-size: 0.95rem;
-    color: #b8a8d4;
+    font-size: 0.85rem;
+    color: #5d5d5d;
     line-height: 1.6;
     font-style: italic;
 }
 
-/* Botão de áudio - agora fora do card */
 .audio-button {
-    background: linear-gradient(135deg, #6b4fa3 0%, #8b5cf6 50%, #7c3aed 100%);
-    color: white;
+    background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #ffd700 100%);
+    color: #ffffff;
     border: none;
     padding: 0.85rem 1.5rem;
     border-radius: 12px;
@@ -230,10 +293,12 @@ main {
     width: 100%;
     justify-content: center;
     box-shadow: 
-        0 4px 12px rgba(139, 92, 246, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        0 4px 12px rgba(212, 175, 55, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .audio-button::before {
@@ -244,7 +309,7 @@ main {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
 }
@@ -257,13 +322,15 @@ main {
 .audio-button:hover {
     transform: scale(1.05);
     box-shadow: 
-        0 6px 20px rgba(139, 92, 246, 0.6),
-        0 0 30px rgba(139, 92, 246, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        0 3px 10px rgba(212, 175, 55, 0.55),
+        0 0 25px rgba(255, 215, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #c49b0b 0%, #e0b94a 50%, #ffdd33 100%);
 }
 
 .audio-button:active {
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 .audio-button.playing {
@@ -273,6 +340,7 @@ main {
         0 4px 12px rgba(16, 185, 129, 0.5),
         0 0 30px rgba(16, 185, 129, 0.3);
 }
+
 
 @keyframes pulse {
     0%, 100% {
@@ -300,13 +368,13 @@ main {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
-    color: #b8a8d4;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f6f0 100%);
+    color: #5d5d5d;
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
-    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
-    border-top: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: 0 -4px 20px rgba(218, 165, 32, 0.1);
+    border-top: 2px solid rgba(218, 165, 32, 0.3);
     position: relative;
     z-index: 1;
 }
@@ -347,19 +415,25 @@ footer {
 
 /* Placeholder para imagens */
 .card-image-placeholder {
-    width: 100%;
-    height: 220px;
-    background: linear-gradient(135deg, #4a3f6f 0%, #5d4e7a 50%, #3d3456 100%);
+    background: linear-gradient(135deg, #e8dcc4 0%, #d4c5a9 50%, #f0e6d2 100%);
     display: flex;
+    flex: 2;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #8b7355;
     font-size: 4.5rem;
     font-weight: bold;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(218, 165, 32, 0.2);
     position: relative;
     overflow: hidden;
 }
+
+.card-image-placeholder img {
+    width: 100%;        /* preenche toda a largura da div */
+    height: 100%;       /* preenche toda a altura da div */
+    object-fit: cover;  /* mantém proporção e corta o excesso */
+    display: block;
+  }
 
 .card-image-placeholder::after {
     content: '';
@@ -384,7 +458,7 @@ footer {
     text-align: center;
     padding: 3rem;
     font-size: 1.2rem;
-    color: #b8a8d4;
+    color: #5d5d5d;
 }
 
 /* Delay progressivo para cada carta */
@@ -430,16 +504,15 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a1a2e;
+    background: #f5f1e8;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #6b4fa3 0%, #8b5cf6 100%);
+    background: linear-gradient(180deg, #b8860b 0%, #daa520 100%);
     border-radius: 6px;
-    border: 2px solid #1a1a2e;
+    border: 2px solid #f5f1e8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #8b5cf6 0%, #a78bfa 100%);
+    background: linear-gradient(180deg, #daa520 0%, #ffd700 100%);
 }
-
