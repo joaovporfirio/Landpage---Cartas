@@ -334,7 +334,7 @@ main {
 }
 
 .audio-button.playing {
-    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #047857 100%);
+    background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #ffd700 100%);
     animation: pulse 1.5s infinite;
     box-shadow: 
         0 4px 12px rgba(16, 185, 129, 0.5),
@@ -346,14 +346,14 @@ main {
     0%, 100% {
         opacity: 1;
         box-shadow: 
-            0 4px 12px rgba(16, 185, 129, 0.5),
-            0 0 30px rgba(16, 185, 129, 0.3);
+            0 4px 12px #b8860b,
+            0 0 30px #d4af37;
     }
     50% {
-        opacity: 0.85;
+        opacity: 0.85;  
         box-shadow: 
-            0 4px 12px rgba(16, 185, 129, 0.7),
-            0 0 40px rgba(16, 185, 129, 0.5);
+        0 4px 12px #b8860b,
+        0 0 40px #d4af37;
     }
 }
 
