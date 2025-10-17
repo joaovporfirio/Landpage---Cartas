@@ -10,7 +10,7 @@ body {
     background: #ffffff;
     background-attachment: fixed;
     min-height: 100vh;
-    color: #e0e0e0;
+    
     line-height: 1.6;
     position: relative;
 }
@@ -23,19 +23,16 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(120, 80, 150, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(80, 120, 150, 0.1) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #ffffff 0%, #fefdfb 100%);
+    background: #ffffff;
     color: #2c2c2c;
     text-align: center;
-    padding: 3.5rem 2rem 3.5rem;
+    padding: 3rem 2rem 3rem;
     box-shadow: 0 8px 32px rgba(218, 165, 32, 0.12);
     border-bottom: none;
     position: relative;
@@ -51,7 +48,7 @@ header::before {
     left: -10%;
     width: 40%;
     height: 200%;
-    background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+    
     transform: rotate(-15deg);
     pointer-events: none;
 }
@@ -63,7 +60,7 @@ header::after {
     right: -10%;
     width: 40%;
     height: 200%;
-    background: radial-gradient(ellipse at center, rgba(221, 221, 221, 0.08) 0%, transparent 10%);
+    
     transform: rotate(-15deg);
     pointer-events: none;
 }
@@ -75,7 +72,7 @@ header .header-line {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, transparent 0%, #daa520 20%, #ffd700 50%, #daa520 80%, transparent 100%);
+  
 }
 
 header h1 {
@@ -83,13 +80,13 @@ header h1 {
     margin-bottom: 0.75rem;
     font-weight: 800;
     letter-spacing: 3px;
-    background: #b8860b;
+    background: #e2ad29;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 header h1::after {
@@ -100,7 +97,7 @@ header h1::after {
     transform: translateX(-50%);
     width: 60%;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #daa520 50%, transparent 100%);
+    
 }
 
 header p {
@@ -170,7 +167,7 @@ main {
     justify-content: flex-end;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(145deg, #ffffff 0%, #fefdfb 100%);
+    
     background-size: cover;
     border-radius: 12px;
     box-shadow: 
@@ -192,7 +189,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none;
@@ -216,7 +213,7 @@ main {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    background: linear-gradient(135deg, #e8dcc4 0%, #d4c5a9 50%, #f0e6d2 100%);
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +252,7 @@ main {
 /* Conteúdo da carta */
 .card-content {
     padding: 1.75rem;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(254, 253, 251, 0.9) 100%);
+    background: #ffffff
 }
 
 .card-title {
@@ -368,10 +365,10 @@ main {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #ffffff 0%, #f9f6f0 100%);
-    color: #5d5d5d;
+    background: #e2ad29;
+    color: #ffffff;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 4rem;
     box-shadow: 0 -4px 20px rgba(218, 165, 32, 0.1);
     border-top: 2px solid rgba(218, 165, 32, 0.3);
@@ -415,7 +412,7 @@ footer {
 
 /* Placeholder para imagens */
 .card-image-placeholder {
-    background: linear-gradient(135deg, #e8dcc4 0%, #d4c5a9 50%, #f0e6d2 100%);
+   
     display: flex;
     flex: 2;
     align-items: center;
