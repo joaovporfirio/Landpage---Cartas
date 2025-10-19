@@ -7,7 +7,7 @@ const cardsData = [
                     "Adinkrahene means “King of the Adinkra symbols.” It is a symbol for authority, " +
                     "leadership, and charisma. Means “highest, best, or king,” and is a symbol of " +
                     "excellence.",
-        image: "images/card01.jpeg",
+        image: "/adinkra-tri/images/card01.jpeg",
         audio: "audio/apple.mp3"
     },
     {
