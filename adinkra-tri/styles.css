@@ -450,6 +450,21 @@ footer {
     pointer-events: none;
 }
 
+.rules{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    background: #fff8e1;
+    border-left: 6px solid #e2ad29;
+    box-shadow: 0 4px 12px rgba(218, 165, 32, 0.1);
+
+}
+.rules h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
 /* Loading state */
 .loading {
     text-align: center;
